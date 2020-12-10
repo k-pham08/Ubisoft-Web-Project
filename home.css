@@ -1,0 +1,190 @@
+:root{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.15;
+    tab-size: 4;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.ubisoft-menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    z-index: 10;
+}
+.logo-ubisoft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.logo-ubisoft > img{
+    height: 50px;
+    width: 80px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.lang-button{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #292828;
+    color: white;
+    padding: 18px 10px 18px 10px;
+    border: none;
+    transition: linear 200ms;
+    
+}
+.lang-button  img:first-child{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.lang-button img:last-child{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+.lang-button:focus{
+    outline: none;
+}
+#eng-button{
+    position: relative;
+    z-index: 2;
+}
+.active-lang{
+    transform: rotate(180deg);
+}
+#vn-button{
+    position: absolute;
+    top: 0;
+    left: 144px;
+    opacity: 0.8;
+    background-color: rgb(102, 102, 102);
+}
+#vn-button:hover{
+    opacity: 1;
+}
+.langdown{
+    transform: translateY(56.8px);
+}
+.main-menu > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.main-menu ul li{
+    width: 8rem;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin-right: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: linear 100ms;
+}
+.main-menu ul li:hover{
+    background-color: white;
+    color: black;
+}
+.drop-down{
+    list-style: none;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 56px;
+    background-color: #00000090;
+}
+.drop-down li{
+    margin-right: 2rem;
+    border: solid #00000000 2px;
+}
+.drop-down li:hover{
+    border: solid oldlace 2px;
+    border-radius: 10px;
+}
+.main-menu ul li:hover .drop-down{
+    display: flex;
+}   
+.login{
+    display: flex;
+    align-items: center;
+}
+.search-area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-area button{
+    background-color: #00000000;
+    border: none;
+}
+.search-area button:focus{
+    outline: none;
+}
+.search-area img{
+    width: 20px;
+}
+.search-area button{
+    margin-right: 2rem;
+}
+.search-area input{
+    position: absolute;
+    width: 45rem;
+    border: none;
+    padding: 10px 1rem 10px 1rem;
+    height: 56.8px;
+    right: 245px;
+    top: -10rem;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    transition: all 0.5s ease-out;
+}
+.search-active{
+    transform: translateY(9rem);
+}
+.login-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: linear 100ms;
+}
+.login-round:hover{
+    opacity: 1;
+}
+.login-round div{
+    padding: 0 1rem 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: linear 100ms;
+}
+.login-round img {
+    width: 22px;
+    height: 22px;
+}
