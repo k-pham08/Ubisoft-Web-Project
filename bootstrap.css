@@ -674,7 +674,7 @@ pre code {
     width: 200px;
 }
 .col-3 div:nth-child(2){
-    color: white;
+    color: black;
     font-weight: 700;
     margin-top: 5px;
 }
@@ -5939,7 +5939,6 @@ a.close.disabled {
 .carousel-item-prev,
 .carousel-item.active {
     display: block;
-    background-color: black;
 }
 .active.carousel-item-right,
 .carousel-item-next:not(.carousel-item-left) {
@@ -5978,7 +5977,6 @@ a.close.disabled {
 .carousel-control-next,
 .carousel-control-prev {
     position: absolute;
-    top: 0;
     bottom: 0;
     z-index: 1;
     display: -ms-flexbox;
@@ -5987,11 +5985,19 @@ a.close.disabled {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 5%;
+    width: 50px;
+    height: 60px;
+    background-color: rgb(189, 189, 189);
     color: #fff;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.3;
     transition: opacity 0.15s ease;
+}
+.carousel-control-prev{
+    border-radius: 0 25px 25px 0;
+}
+.carousel-control-next{
+    border-radius: 25px 0 0 25px;
 }
 @media (prefers-reduced-motion: reduce) {
     .carousel-control-next,
@@ -5999,9 +6005,8 @@ a.close.disabled {
         transition: none;
     }
 }
-.carousel-control-next:focus,
+
 .carousel-control-next:hover,
-.carousel-control-prev:focus,
 .carousel-control-prev:hover {
     color: #fff;
     text-decoration: none;
@@ -6017,8 +6022,8 @@ a.close.disabled {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background: no-repeat 50%/100% 100%;
 }
 .carousel-control-prev-icon {
@@ -7402,7 +7407,7 @@ button.bg-dark:hover {
 .w-100 {
     width: 100% !important;
     height: 100vh;
-    padding-top: 57px;
+    padding-top: 50px;
 }
 .w-auto {
     width: auto !important;

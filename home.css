@@ -47,7 +47,7 @@ html{
     font-weight: 700;
     background-color: #292828;
     color: white;
-    padding: 18px 10px 18px 10px;
+    padding: 18px 10px 17px 10px;
     border: none;
     transition: linear 200ms;
     
@@ -93,14 +93,16 @@ html{
     margin: 0;
 }
 
-.main-menu ul li{
+.main-menu > ul > li{
     width: 8rem;
     text-align: center;
     padding: 1rem 0 1rem 0;
     margin-right: 2rem;
     font-weight: 500;
-    cursor: pointer;
     transition: linear 100ms;
+}
+.main-menu > ul > li > span{
+    cursor: pointer;
 }
 .main-menu ul li:hover{
     background-color: white;
@@ -110,19 +112,277 @@ html{
     list-style: none;
     display: none;
     justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     right: 0;
     top: 56px;
-    background-color: #00000090;
+    background-color: white;
 }
-.drop-down li{
-    margin-right: 2rem;
-    border: solid #00000000 2px;
+.drop-down ul{
+    list-style: none;
 }
-.drop-down li:hover{
-    border: solid oldlace 2px;
-    border-radius: 10px;
+.play-left,
+.shop-left{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-right: 5rem;
+}
+.play-left h3,
+.shop-left h3{
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+.play-left h3::after,
+.shop-left h3::after{
+    content: "";
+    display: block;
+    border-bottom: gray 1px solid;
+    margin-top: 5px;
+}
+.play-left button,
+.shop-left button{
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    border: solid 3px rgb(173,0,0);
+    border-radius: 25px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-weight: 700;
+    top: 16px;
+    margin: 3rem auto 3rem auto;
+    transition: linear 100ms;
+}
+.play-left button:hover,
+.shop-left button:hover,
+.shop-right button:hover,
+.explore button:hover,
+.connect button:hover{
+    color: rgb(173, 0, 0);
+    background-color: white;
+}
+.play-left-content-left,
+.shop-left-content-left{
+    width: 40%;
+    margin-left: 5rem;
+}
+.play-left-content-right ul,
+.shop-left-content-right ul{
+    width: 260px;
+}
+.play-left-content-left ul li,
+.play-left-content-right ul li,
+.shop-left-content-left ul li,
+.shop-left-content-right ul li{
+    font-weight: 300;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.play-left-content-left ul li:hover,
+.play-left-content-right ul li:hover,
+.shop-left-content-left ul li:hover,
+.shop-left-content-right ul li:hover{
+    color: black;
+    font-weight: 500;
+}
+.play-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-right: 5rem;
+}
+.play-right h3{
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+.play-right img{
+    position: relative;
+    width: 100%;
+}
+.play-right button{
+    padding: 10px 30px 10px 30px;
+    border: solid 3px rgb(0,0,194);
+    border-radius: 25px;
+    background-color: rgb(0, 0, 194);
+    color: white;
+    font-weight: 700;
+    margin: 4rem auto 2rem auto;
+    transition: linear 100ms;
+}
+.play-right button:hover{
+    background-color: white;
+    color: rgb(0, 0, 194);
+}
+.shop-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.shop-right h3{
+    position: relative;
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    left: 70px;
+}
+.shop-right h3::after{
+    content: "";
+    display: block;
+    border-bottom: gray 1px solid;
+    margin-top: 5px;
+    width: 600px;
+}
+.shop-right ul{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.shop-right ul li{
+    width: 150px;
+    margin: 2rem;
+    cursor: pointer;
+}
+.shop-right ul li:hover h2{
+    text-decoration: underline;
+}
+.shop-right img{
+    width: 150px;
+}
+.shop-right h2{
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.shop-right p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.shop-right span{
+    font-size: 24px;
+    color: rgb(255, 66, 98);
+}
+.shop-right button,
+.explore-left button,
+.connect button{
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    border: solid 3px rgb(173,0,0);
+    border-radius: 25px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-weight: 700;
+    margin: 2rem auto 2rem auto;
+    transition: linear 100ms;
+}
+.explore{
+    display: flex;
+    text-align: left;
+}
+.explore h3{
+    margin: 2rem 0 0 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+.explore h3::after{
+    content: "";
+    display: block;
+    border-bottom: gray 1px solid;
+    margin-top: 5px;
+    width: 40%;
+}
+.explore-left ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.explore-left ul li{
+    display: flex;
+    position: relative;
+    margin: 1rem;
+    cursor: pointer;
+}
+.explore-left ul li:hover h2{
+    text-decoration: underline;
+}
+.explore-left ul li img{
+    width: 200px;
+    margin-right: 1rem;
+}
+.explore-left ul li h2{
+    font-size: 16px;
+    width: 300px;
+    font-weight: 700;
+}
+.explore-left ul li div{
+    width: 300px;
+}
+.explore-left ul li div p{
+    font-weight: 300;
+}
+.explore-right{
+    width: 60%;
+    background-color: rgb(245, 245, 245);
+}
+.explore-right ul li{
+    margin: 1rem;
+    color: rgb(173, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.explore-right ul li:hover{
+    background-color: rgb(245, 245, 245);
+    color: black;
+    text-decoration: underline;
+}
+.connect{
+    display: flex;
+}
+
+.connect-left{
+    display: flex;
+}
+.connect h3{
+    font-size: 16px;
+    text-align: left;
+}
+.connect-left-content,
+.connect-right-content{
+    margin: 1rem 2rem;
+}
+.connect-left-content img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.connect-left-content p{
+    margin-top: 10px;
+    width: 300px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.connect-right-content p{
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: left;
+}
+.connect-right-content img{
+    height: 300px;
+    cursor: pointer;
+}
+.connect-right-content button{
+    position: relative;
+    top:48px;
 }
 .main-menu ul li:hover .drop-down{
     display: flex;
