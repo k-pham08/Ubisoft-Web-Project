@@ -7,7 +7,7 @@ function searchClick(){
 }
 function preloadInit(){
     const preload = document.querySelector(".preloader");
-    const body = document.querySelector("body");
+    const body = document.querySelector("html");
     const main = document.querySelector(".main");
     setTimeout(() => {
         preload.style.opacity = 0;

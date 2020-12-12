@@ -30,13 +30,13 @@ button:focus{
 }
 .preloader img{
     position: absolute;
-    width: 5rem;
+    width: 6rem;
     margin: auto;
     left: 0;
     right: 0px;
     bottom: 100px;
     opacity: 0;
-    animation: preloading ease 0.8s infinite alternate;
+    animation: preloading ease-in 0.5s infinite alternate;
 }
 .preloader::before{
     content: '';
@@ -161,8 +161,8 @@ button:focus{
     align-items: center;
     position: absolute;
     width: 100%;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 5px 5px black;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 10px black;
     right: 0;
     top: 56px;
     background-color: white;
@@ -379,6 +379,7 @@ button:focus{
 .explore-right{
     width: 60%;
     background-color: rgb(245, 245, 245);
+    border-radius: 0 0 30px 0;
 }
 .explore-right ul li{
     margin: 1rem;
@@ -527,13 +528,13 @@ button:focus{
 .revelations-button,
 .brotherhood-button,
 .rogue-button{
-    width: 300px;
+    width: 200px;
     color: white;
     text-shadow: 2px 2px black;
     padding: 1rem 0 1rem 0;
     border-radius: 35px;
     margin: 2rem 5rem 0 5rem;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     transition: linear 100ms;
 }
@@ -547,9 +548,7 @@ button:focus{
 .revelations-button:hover,
 .brotherhood-button:hover,
 .rogue-button:hover{
-    background-color: white;
-    color: black;
-    text-shadow: none;
+    transform: scale(1.2);
 }
 .valhalla-button{
     background-color: rgb(16, 165, 150);
