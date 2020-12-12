@@ -12,8 +12,9 @@
 html{
     scroll-behavior: smooth;
 }
-
-
+button:focus{
+    outline: none !important;
+}
 .ubisoft-menu{
     position: fixed;
     width: 100%;
@@ -52,7 +53,7 @@ html{
     transition: linear 200ms;
     
 }
-.lang-button  img:first-child{
+.lang-button img:first-child{
     width: 15px;
     height: 15px;
     margin-right: 5px;
@@ -83,7 +84,7 @@ html{
     opacity: 1;
 }
 .langdown{
-    transform: translateY(56.8px);
+    transform: translateY(56px);
 }
 .main-menu > ul{
     list-style: none;
@@ -92,7 +93,6 @@ html{
     flex-wrap: wrap;
     margin: 0;
 }
-
 .main-menu > ul > li{
     width: 8rem;
     text-align: center;
@@ -115,6 +115,8 @@ html{
     align-items: center;
     position: absolute;
     width: 100%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 5px black;
     right: 0;
     top: 56px;
     background-color: white;
@@ -347,7 +349,6 @@ html{
 .connect{
     display: flex;
 }
-
 .connect-left{
     display: flex;
 }
@@ -370,7 +371,6 @@ html{
     font-weight: 400;
     text-align: left;
 }
-
 .connect-right-content p{
     margin-top: 10px;
     font-weight: 400;
@@ -447,4 +447,363 @@ html{
 .login-round img {
     width: 22px;
     height: 22px;
+}
+.banner-logo{
+    position: absolute;
+    width: 200px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.banner-content{
+    position: absolute;
+    color: white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+}
+.banner-content h2{
+    font-size: 60px;
+    text-shadow: 8px 5px black;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.valhalla-button,
+.odyssey-button,
+.origins-button,
+.syndicate-button,
+.unity-button,
+.iv-button,
+.iii-button,
+.revelations-button,
+.brotherhood-button,
+.rogue-button{
+    width: 300px;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 1rem 0 1rem 0;
+    border-radius: 35px;
+    margin: 2rem 5rem 0 5rem;
+    font-size: 20px;
+    font-weight: 700;
+    transition: linear 100ms;
+}
+.valhalla-button:hover,
+.odyssey-button:hover,
+.origins-button:hover,
+.syndicate-button:hover,
+.unity-button:hover,
+.iv-button:hover,
+.iii-button:hover,
+.revelations-button:hover,
+.brotherhood-button:hover,
+.rogue-button:hover{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
+.valhalla-button{
+    background-color: rgb(16, 165, 150);
+    border: rgb(16, 165, 150) 3px solid;
+}
+.odyssey-button{
+    background-color: rgb(168, 124, 66);
+    border:rgb(168, 124, 66) 3px solid;
+}
+.origins-button{
+    background-color: rgb(216, 146, 67);
+    border: rgb(216, 146, 67) 3px solid;
+}
+.syndicate-button{
+    background-color: rgb(60, 71, 86);
+    border: rgb(60, 71, 86) 3px solid;
+}
+.unity-button{
+    background-color: rgb(81, 133, 195);
+    border: rgb(81, 133, 195) 3px solid;
+}
+.iv-button{
+    background-color: rgb(39, 39, 39);
+    border:  rgb(39, 39, 39) 3px solid;
+}
+.iii-button{
+    background-color: rgb(112, 112, 112);
+    border: rgb(112, 112, 112) 3px solid;
+}
+.revelations-button{
+    background-color: rgb(52, 90, 83);
+    border:  rgb(52, 90, 83) 3px solid;
+}
+.brotherhood-button{
+    background-color: rgb(133, 0, 0);
+    border: rgb(133, 0, 0) 3px solid;
+}
+.rogue-button{
+    background-color: rgb(0, 0, 0);
+    border:  rgb(0, 0, 0) 3px solid;
+}
+.all-games-tittle{
+    text-align: center;
+}
+.all-games-tittle h3{
+    font-size: 40px;
+    margin-top: 4rem;
+}
+.all-games-slide{
+    position: relative;
+}
+.all-games-slide button{
+    position: absolute;
+    padding: 10px 30px 10px 30px;
+    border: solid 3px rgb(173,0,0);
+    border-radius: 25px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-weight: 700;
+    margin: 2rem auto 2rem auto;
+    transition: linear 100ms;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+}
+.all-games-slide button:hover{
+    color: rgb(173, 0, 0);
+    background-color: white;
+}
+.news{
+    position: relative;
+}
+.news button{
+    position: absolute;
+    padding: 10px 50px 10px 50px;
+    border: solid 3px rgb(173,0,0);
+    border-radius: 30px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto 2rem auto;
+    transition: linear 100ms;
+    right: 0;
+    left: 0;
+}
+.news button:hover{
+    color: rgb(173, 0, 0);
+    background-color: white;
+}
+.news-tittle{
+    text-align: center;
+    margin-top: 4rem;
+}
+.news-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.news-list li{
+    margin: 1rem;
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+}
+.news-article{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.news-article h3{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.news-article h3:hover{
+    text-decoration: underline;
+}
+.news-article-left{ 
+    margin-right: 3rem;
+}
+.news-article-left > img{
+    width: 600px;
+}
+.news-article-left img:not(:first-child){
+    width: 350px;
+}
+.news-article-left > div{
+    position: relative;
+    display: flex;
+    margin-top: 5rem;
+    bottom: 13px;
+}
+.news-article-right img{
+    width: 350px;
+}
+.news-article-right > div{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.img-para{
+    margin-left: 1rem;
+}
+.sp-tittle{
+    margin-right: 1rem;
+}
+.store{
+    background-color: rgb(236, 236, 236);
+    margin-top: 10rem;
+}
+.store h1{
+    text-align: center;
+    padding: 5rem;
+}
+.store-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+.store-content p{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(#000000,#00000090,#00000000);
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.store-content div{
+    position: relative;
+    width: 450px;
+    margin: 1rem;
+}
+.store-container{
+    cursor: pointer;
+}
+
+.store-content img{
+    width: 450px;
+    height: 500px;
+    box-shadow: 8px 8px rgb(85, 85, 85);
+}
+.ubisoft-community{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 48);
+    padding: 5rem;
+}
+.ubisoft-community-img{
+    margin-right: 3rem;
+}
+.ubisoft-community-img img{
+    width: 450px;
+}
+.ubisoft-community-content img{
+    width: 180px;
+    height: 70px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.ubisoft-community-content h1{
+    color: white;
+    margin-bottom: 2rem;
+}
+.ubisoft-community-content p{
+    font-size: 25px;
+    color:  white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.social-contact{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-contact ul{
+    list-style: none;
+    display: flex; 
+    padding: 8px 0 8px 0;
+    margin-bottom: 0;
+}
+.social-contact img{
+    height: 32px;
+    width: 32px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: linear 80ms;
+}
+.social-contact span{
+    color: #888888;
+    font-size: 14px;
+    margin-left: 2rem;
+}
+.social-contact ul li{
+    margin: 0 1rem 0 1rem;
+}
+.social-contact img:hover{
+    opacity: 1;
+}
+
+.global-footer{
+    background-color: rgb(29, 30, 33);
+    display: flex;
+    justify-content: space-between;
+}
+.footer-table{
+    margin-top: 3rem;
+    font-weight: 500;
+}
+.footer-table td{
+    color: white;
+    width: 12rem;
+    padding-top: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.footer-table td:hover{
+    text-decoration: underline;
+}
+.legaly{
+    margin: 3rem 0 5rem 5rem;
+}
+.legaly img{
+    width: 120px;
+    height: 40px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.footer-link a{
+    color: rgb(136, 135, 135);
+    font-size: 12px;
+}
+.footer-link a:hover{
+    color: white;
+}
+.footer-link a:first-child{
+    padding-right: 10px;
+}
+.rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 2rem;
+}
+.rate p{
+    color: white;
+}
+.end{
+    display: block;
+    background-color: rgb(29, 30, 33);
+    color:  rgb(136, 135, 135);
+    font-size: 12px;
+    text-align: center;
+    padding: 0 1rem 1rem 1rem;
 }

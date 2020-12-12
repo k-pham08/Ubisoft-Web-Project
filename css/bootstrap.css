@@ -668,7 +668,7 @@ pre code {
     transition: linear 100ms;
 }
 .col-3:hover{
-    opacity: 0.6;
+    transform: scale(1.1);
 }
 .col-3 img{
     width: 200px;
