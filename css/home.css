@@ -11,9 +11,55 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 button:focus{
     outline: none !important;
+}
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background/preloader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 30;
+    transition: 800ms linear;
+}
+.preloader img{
+    position: absolute;
+    width: 5rem;
+    margin: auto;
+    left: 0;
+    right: 0px;
+    bottom: 100px;
+    opacity: 0;
+    animation: preloading ease 0.8s infinite alternate;
+}
+.preloader::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: solid white 5px;
+    animation: loading 4s ;
+}
+@keyframes loading{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes preloading{
+   from{
+       opacity: 0;
+   }
+   to{
+       opacity: 1;
+   }
 }
 .ubisoft-menu{
     position: fixed;

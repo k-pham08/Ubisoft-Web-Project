@@ -5,3 +5,15 @@ function langClick(){
 function searchClick(){
     document.querySelector("#input-search").classList.toggle("search-active");
 }
+function preloadInit(){
+    const preload = document.querySelector(".preloader");
+    const body = document.querySelector("body");
+    const main = document.querySelector(".main");
+    setTimeout(() => {
+        preload.style.opacity = 0;
+        preload.style.zIndex = -30;
+        body.style.overflowY = 'visible';
+        main.style.opacity = 1;
+    }, 4000);
+}
+preloadInit();
