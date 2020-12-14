@@ -14,6 +14,9 @@ html{
     overflow-y: hidden;
     overflow-x: hidden;
 }
+#second-control{
+    bottom: -2rem !important;
+}
 button:focus{
     outline: none !important;
 }
@@ -610,7 +613,7 @@ button:focus{
     font-weight: 700;
     margin: 2rem auto 2rem auto;
     transition: linear 100ms;
-    bottom: -30px;
+    bottom: -4rem;
     right: 0;
     left: 0;
 }
@@ -641,7 +644,7 @@ button:focus{
 }
 .news-tittle{
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 .news-list{
     list-style: none;
@@ -852,3 +855,4 @@ button:focus{
     text-align: center;
     padding: 0 1rem 1rem 1rem;
 }
+

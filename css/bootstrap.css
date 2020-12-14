@@ -5993,6 +5993,7 @@ a.close.disabled {
     opacity: 0.3;
     transition: opacity 0.15s ease;
 }
+
 .carousel-control-prev{
     border-radius: 0 25px 25px 0;
 }
