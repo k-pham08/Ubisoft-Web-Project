@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="ubisoft-menu">
+    <div class="ubisoft-menu" id="ubisoft-menu">
         <div class="logo-ubisoft" onclick="window.location='home.html'">
             <img src="../img/logo/ubisoft-white.png" alt="">
         </div>
@@ -21,8 +21,6 @@
             <ul>
                 <li>UBISOFT+</li>
                 <li>NEWS</li>
-                <li>MORE GAMES</li>
-                <li>STORE</li>
                 <li>FORUMS</li>
                 <li>SUPPORT</li>
             </ul>
@@ -39,7 +37,7 @@
         </div>
     </div>
     <div class="ass-menu">
-        <div class="ass-logo"><img src="../img/logo/ass-logo.png" alt=""></div>
+        <div class="ass-logo" onclick="window.location='#ubisoft-menu'"><img src="../img/logo/ass-logo.png"></div>
         <div class="ass-content">
             <ul>
                 <li><a href="#ass-valhalla">VALHALLA</a></li>
@@ -56,8 +54,8 @@
             <div class="language">VIETNAMESE</div>
         </button>
     </div>
-    <div class="bg" data-aos="fade-out">
-        <img src="../img/content/ass-bg.png" alt="">
+    <div class="bg" id="bg"data-aos="fade-out">
+        <img src="../img/content/ass-bg.png">
     </div>
     <div class="overview">
         <h2>Assassin's Creed Franchise</h2>
@@ -67,7 +65,7 @@
         <div class="val-content">
             <h2>Assassin's Creed Valhalla</h2>
             <p>In Assassin’s Creed Valhalla, you are Eivor, a fierce Viking warrior. Explore a dynamic open world set against the brutal backdrop of England’s Dark Ages. Raid your enemies and build your political power in your quest to earn your place in Valhalla.</p>
-            <div class="val-button">BUY NOW</div> 
+            <div class="val-button">More Info</div>
         </div>
         <div class="val-img"><img src="../img/content/valhalla.png" alt=""></div>
     </div>
@@ -79,7 +77,7 @@
                 <h2  data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Odyssey</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Write your own epic odyssey and become a legendary Greek Hero in Assassin’s Creed Odyssey, an inspiring adventure where you must forge your destiny. Influence how history unfolds as you discover a rich world shaped by your decisions.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="origins">
@@ -87,7 +85,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Origins</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin’s Creed Origins uncovers the beginning of the Brotherhood. Fight in epic battles, master a reinvented combat system and explore the entirety of Egypt. Complete missions in any order you choose, and follow your own path to greatness.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -98,8 +96,8 @@
                 <img src="../img/content/Syndicate.png" alt="" data-aos="fade-up" data-aos-duration="800">
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Syndicate</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Play as Evie and Jacob Frye, young and reckless Assassin twins, and use your skills to help those trampled by the march of progress. Travel the city at the height of the Industrial Revolution and meet iconic historical figures.</p>
-                <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" onclick="window.open('More Info.html')">
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -107,7 +105,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Unity</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed Unity, play as Arno through the storming of the Bastille to the execution of King Louis XVI, experience the French Revolution as never before – and help the people of France carve an entirely new destiny.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -119,7 +117,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed IV Black Flag</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed IV Black Flag, play as captain Edward Kenway, standing among legendary pirates such as Blackbeard, as you establish a lawless republic in the Bahamas and relive the truly explosive events that defined the Golden Age of Piracy.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -127,7 +125,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed III</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin’s Creed III takes you back to the American Revolutionary War, a time of civil unrest. As a Native American fights to protect his land and his people, he will become an Assassin who ignite the flames of a young nation’s revolution.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -139,7 +137,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Revelations</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed Revelations, Master Assassin Ezio Auditore walks in the footsteps of the legendary Mentor Altaïr. It is a perilous path – one that will take Ezio to Constantinople, where an army of Templars threatens to destabilize the region.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -147,7 +145,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Brotherhood</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed Brotherhood, live and breathe as Ezio, a legendary Master Assassin, in his struggle against the powerful Templar Order. He must journey into Rome, center of power, greed and corruption to strike at the heart of the enemy.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -159,7 +157,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed II</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin’s Creed 2 is the follow-up to the title that became the fastest-selling new IP in video game history. The highly anticipated title features a new hero, Ezio Auditore, a young Italian noble, and a new era, the Renaissance.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -167,7 +165,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">The setting is 1191 AD. The Third Crusade is tearing the Holy Land apart. You, Altair, intend to stop the hostilities by suppressing both sides of the conflict. You are an Assassin, a warrior shrouded in secrecy and feared for your ruthlessness.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -179,7 +177,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed : The Rebel Collection</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed The Rebel Collection offers two action-packed games and all past single-player DLC. Become the most feared pirate in Assassin’s Creed IV: Black Flag then transform into the ultimate Assassin hunter in Assassin’s Creed Rogue.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -187,7 +185,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed III Remastered</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Relive the American Revolution or experience it for the first time in Assassin's Creed III Remastered, with enhanced graphics and improved gameplay mechanics. Plus, Assassin's Creed Liberation Remastered and all solo DLC content are included.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -199,7 +197,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Rogue Remastered</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">The darkest chapter of the franchise, Assassin’s Creed Rogue, has been remastered for Xbox One and PlayStation4 system, now featuring high-resolution textures, improved shadows and lighting in addition to several graphical enhancements.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -207,7 +205,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed The Ezio Collection</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Make history as the legendary Master Assassin, Ezio Auditore, in Assassin’s Creed The Ezio Collection, which includes the single-player campaigns from Assassin’s Creed II, Assassin’s Creed Brotherhood, and Assassin’s Creed Revelations.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -219,7 +217,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Rebellion</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Play with your favorite Assassins from different Assassin's Creed universes simultaneously for the first time! Build, Manage and Control your Brotherhood by collecting famous Assassins to defeat the Templars in epic infiltration missions.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -227,7 +225,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Chronicles Russia</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed Chronicles: Russia, join Nikolaï Orelov in his search for redemption as you journey through an iconic art style Russia. Survive the aftermath of October Revolution and experience the thrill of being a stealthy Assassin.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -239,7 +237,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Chronicles India</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed Chronicles: India, embody Arbaaz in his quest for retribution through the 19th century Colonial India. Zip-line across the streets of Amritsar and hunt legendary artifacts, following in the footsteps of Alexander the Great.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
             <div class="right">
@@ -247,7 +245,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Assassin's Creed Chronicles</h2>
                 <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">In Assassin’s Creed Chronicles: China. You embody Shao Jun, the last remaining Assassin of the Chinese Brotherhood in 1526. Newly trained by Mentor Ezio Auditore, she is hell-bent to exact vengeance and restore her fallen Brotherhood.</p>
                 <div class="visit-button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div>BUY NOW</div>
+                    <div>More Info</div>
                 </div>
             </div>
         </div>
@@ -318,6 +316,8 @@
 <script src="../index.js"></script>
 <script src="../LibraryJS/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+      once: true,
+  });
 </script>
 </html>

@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e5e8f0;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+}
+
+div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #008aa4;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+a, p {
+    font-size: .9375rem;
+}
+
+.header {
+    width: auto;
+    height: 171px;
+    position: relative;
+}
+
+.header .header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    transition: transform .3s ease;
+}
+
+.header .nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 64.0625em){
+    .header .nav-main {
+        padding: 0 60px;
+    }
+}
+
+.header .header-nav {
+    background-color: #fff;
+}
+
+.header-nav .nav-top {
+    background-color: rgb(42, 43, 47);
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(42, 43, 47);
+}
+
+.header-nav .primary-contain {
+    text-align: right;
+    margin: 15px 0;
+    position: relative;
+    font-weight: 600;
+}
+
+.header-nav .primary-link {
+    color:#00bcd4;
+}
+
+.header-nav .img-coin {
+    width: 22px;
+    height: 22px;
+    margin-bottom: -5px;
+}
+
+.header-nav .primary-nav-left {
+    width: 50px;
+}
+
+.header-nav .nav-pencil-line {
+    background: #d8e5fb;
+    border-bottom: 1px solid #dbdde4;
+}
+
+.header-nav .pencil-line-link {
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    font-family: "Ubisoft Sans Regular",Arial,sans-serif;
+    color: black
+    ;
+}
+.header-nav .nav-main-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-nav .nav-logo {
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 76px;
+}
+
+.header-nav .nav-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-img{
+    width: 80%;
+    height: 50%;
+}
+.header-nav .nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 10px 0 30px;
+}
+
+.header-nav .nav-link {
+    text-transform: uppercase;
+    display: inline-table;
+    padding: 22px 20px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    font-size: .9375rem;
+    transition: border .3s ease-in-out;
+}
+
+.header-nav .nav-link:hover {
+    border-bottom-color: #008aa4;
+}
+
+.header-nav .nav-text {
+    font-weight: 600;
+    color: #008aa4;
+}
+
+.header-nav .nav-main {
+    background-color: black;
+}
+
+.header-nav .nav-main-right {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav .nav-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.header-nav .nav-search {
+    display: flex;
+    justify-content: flex-start;
+    border-right: 1px solid #008aa4;
+    margin-right: 30px;
+    width: 100%;
+}
+
+input[type="text"] {
+    background-color: black;
+    color: white;
+    margin-right: 25px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #008aa4;
+    font-size: .8125rem;
+    width: 232px;
+    height: 30px
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #008aa4;
+}
+
+input[type="text"]:focus::placeholder {
+    opacity: .6;
+}
+
+.header-nav .nav-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.header-nav .nav-btn {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+.header-nav .nav-btn:focus {
+    outline: none;
+}
+
+.header-nav .nav-utility {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav .heart {
+    min-width: 30px;
+    margin: 0 20px 0 20px;
+}
+
+.header-nav .cart {
+    position: relative;
+}
+
+.header-nav .nav-main-right .cart-quantity {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #338b9c;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: .85rem;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+}

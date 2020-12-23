@@ -1,0 +1,145 @@
+.footer-seo {
+    padding: 40px 0;
+    margin: 0 80px;
+}
+
+.footer-seo-text {
+    margin: 0;
+    font-size: 11px;
+    position: static;
+    line-height: 16px;
+    color: #929db6;
+    text-align: justify
+}
+
+.footer {
+    background-color: #fff;
+}
+
+.footer-icon-bar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #dbdde4;
+}
+
+.footer-icon-bar .footer-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-icon-bar .footer-img {
+    text-align: center;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.footer-icon-bar .footer-img img {
+    height: 52px;
+}
+
+.footer-icon-bar .footer-text {
+    color: #000;
+    font-size: .8125rem;
+    line-height: normal;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-icon-bar .footer-icon-gold {
+    background: url(img/coin.svg) no-repeat;
+    padding: 0 6px;
+    font-size: .7rem;
+}
+
+.footer .footer-container {
+    margin: 0 auto;
+    max-width: 101.25rem;
+}
+
+@media screen and (min-width: 64.0625em){
+    .footer-container {
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .footer-container {
+        padding: 40px 170px;
+    }
+}
+
+.footer-container .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    border-right: none;
+    width: 100%;
+}
+
+.footer-container .footer-section {
+    width: 25%;
+}
+
+.footer-container .footer-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: .8125rem;
+}
+
+.footer-container .footer-container-list ul li {
+    font-size: .9375rem;
+    line-height: 2.2;
+}
+
+.footer-container .footer-container-list a {
+    display: inline-block;
+    font-size: .8125rem;
+}
+
+.footer-container .footer-container-list a:hover {
+    color: #026e82;
+}
+
+.footer-container .footer-section .footer-faq {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 26px;
+    font-size: .8125rem;
+    border: 1px solid #35c1cf;
+    cursor: pointer;
+    transition: all .12s ease-in-out;
+}
+
+.footer-container .footer-section .footer-faq:hover {
+    background: #35c1cf;
+    border-color: #35c1cf;
+    color: #fff;
+}
+
+.footer-container .footer-section .footer-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-container .footer-section .footer-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-legal {
+    padding: 0 0 10px;
+}
+
+.footer-legal .footer-legal-box p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-size: .6875rem;
+}

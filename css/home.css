@@ -14,6 +14,10 @@ html{
     overflow-y: hidden;
     overflow-x: hidden;
 }
+.main{
+    opacity: 0;
+}
+
 #second-control{
     bottom: -2rem !important;
 }
@@ -111,6 +115,7 @@ button:focus{
     width: 15px;
     height: 15px;
     margin-left: 10px;
+    transition: all 300ms ease-out;
 }
 .lang-button:focus{
     outline: none;
@@ -470,6 +475,7 @@ button:focus{
     right: 245px;
     top: -10rem;
     margin: auto;
+    box-shadow: 0 0 10px 0 black;
     border-radius: 10px 10px 0 0;
     outline: none;
     transition: all 0.5s ease-out;
@@ -634,7 +640,6 @@ button:focus{
     font-weight: 700;
     font-size: 20px;
     margin: 0 auto 2rem auto;
-    transition: linear 100ms;
     right: 0;
     left: 0;
 }
@@ -656,6 +661,9 @@ button:focus{
     color: red;
     font-weight: 500;
     cursor: pointer;
+}
+.news-list li:hover{
+    text-decoration: underline;
 }
 .news-article{
     display: flex;
