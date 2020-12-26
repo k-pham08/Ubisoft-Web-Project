@@ -12,6 +12,8 @@
     display: flex;
     padding: 85px 0 320px;
     text-align: left;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart-empty-text, .cart-img-container {
