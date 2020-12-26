@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubisoft Store | Discover the world of Ubisoft </title>
+    <title>Shopping Cart | Ubisoft Store</title>
     <link rel="stylesheet" href="../css/header-store.css">
-    <link rel="stylesheet" href="../css/footer-store.css">
     <link rel="stylesheet" href="../css/main-store.css">
+    <link rel="stylesheet" href="../css/footer-store.css">
     <link rel="shortcut icon" href="../img/logo/logo.png" type="image/png">
 </head>
 
@@ -33,7 +33,7 @@
                     <div class="nav-main">
                         <div class="nav-main-left">
                             <div class="nav-logo">
-                                <a href="home.html" class="nav-logo-link">
+                                <a href="#" class="nav-logo-link">
                                     <img src="../img/store-site/logo.png" class="nav-img" />
                                 </a>
                             </div>
@@ -70,7 +70,7 @@
                                 </form>
                                 <div class="nav-utility">
                                     <div class="utility-item">
-                                        <a href="login.html" target="#">
+                                        <a href="login.html">
                                             <img src="../img/store-site/account.svg" alt="" class="nav-icon">
                                         </a>
                                     </div>
@@ -82,7 +82,7 @@
                                     <div class="utility-item cart">
                                         <a href="#">
                                             <img src="../img/store-site/cart.svg" alt="" class="nav-icon">
-                                            <span class="cart-quantity">0</span>
+                                            <span class="cart-quantity">1</span>
                                         </a>
                                     </div>
                                 </div>
@@ -93,8 +93,7 @@
                         <div class="nav-pencil-line">
                             <a href="#" class="pencil-line-link">
                                 <span style="text-transform: uppercase;">Get an extra 21% off with the code
-                                    <strong>WELCOME2021</strong>
-                                </span>
+                                    <strong>WELCOME2021</strong></span>
                             </a>
                         </div>
                     </div>
@@ -102,7 +101,7 @@
             </div>
         </header>
         <div class="main">
-            <div class="cart-empty">
+            <div class="cart-empty cart-empty-hidden">
                 <div class="cart-empty-container">
                     <div class="cart-empty-text">
                         <h1 class="title">Your bag is empty.</h1>
@@ -115,6 +114,168 @@
                     <div class="cart-img-container">
                         <div class="img-title">
                             <img src="../img/store-site/empty_cart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-wrapper">
+                <div class="cart-section">
+                    <div class="cart-section-title">
+                        <h3>
+                            <span style="text-transform: uppercase;">Cart</span>
+                            <span style="font-weight: 400;">1 item</span>
+                        </h3>
+                    </div>
+                    <div class="cart-section-content">
+                        <div class="cart-items-list">
+                            <div class="cart-item">
+                                <div class="item-img">
+                                    <img src="../img/store-site/assassin.jpg" alt="">
+                                </div>
+                                <div class="item-details">
+                                    <div class="details-item-1">
+                                        <div class="item-title">
+                                            <a href="#" class="item-title-link">Assassin's Creed Syndicate</a>
+                                            <p>Gold Edition</p>
+                                        </div>
+                                        <div class="item-availability">
+                                            <div class="item-availability-date">
+                                                <span><img src="../img/store-site/date.svg" alt=""
+                                                        style="width: 22px; height: 22px; margin-right: 5px;"></span>
+                                                <span>Release date: 19/11/2015</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details-item-2">
+                                        <div class="item-params">
+                                            <div class="item-param">
+                                                <span>Platform</span>
+                                                <span>:</span>
+                                                <span class="item-param-value">PC (Download)</span>
+                                                <div class="dropdown-arrow-container">
+                                                    <span class="dropdown-arrow"></span>
+                                                    <div class="item-param-variations">
+                                                        <ul class="item-param-variations-list">
+                                                            <li class="item-param-variations-item">PC (Download)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-quantity">
+                                            <span>Quantity : </span>
+                                            <span class="item-operator" onclick="increase()">+</span>
+                                            <span style="font-weight: 600; color: #35c1cf;" class="value">1</span>
+                                            <span class="item-operator" onclick="decrease()">-</span>
+                                        </div>
+                                        <div class="price-wrapper">
+                                            <span class="price-sales">$17.5</span>
+                                            <span class="price-item">$69.99</span>
+                                        </div>
+                                        <div class="item-remove">
+                                            <button type="submit" value="remove">
+                                                <img src="../img/store-site/trash-can.svg" alt="" style="width: 15px; height: 15px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="details-item-3">
+                                        <span>Earn up to</span>
+                                        <span class="units">
+                                            <img src="../img/store-site/coin.svg" alt=""><span class="units-val">18</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items-subtotals">
+                            <p class="subtotal-title">Subtotal</p>
+                            <div class="subtotal-value">
+                                <span class="price-value">$ 17,5</span>
+                                <span class="include-vat">incl. VAT</span>
+                            </div>
+                        </div>
+                        <div class="cart-item-promotion-slot">
+                            <p class="promotion-slot-text">
+                                Earn units by purchasing on Store! Your units top up each purchase on the Ubisoft Store,
+                                we will credit your Ubisoft account within 10 working days.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-recap">
+                    <div class="cart-section-title">
+                        <h3>ORDER RECAP</h3>
+                    </div>
+                    <div class="cart-section-content">
+                        <div class="order-totals">
+                            <div class="order-total-section subtotals-section">
+                                <div class="order-total-row total-items">
+                                    <div class="order-total-title">
+                                        <span><strong>Cart</strong></span>
+                                    </div>
+                                    <div class="order-total-value">
+                                        <span class="price-value">$ 17,5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-total-section promo-section">
+                                <div class="order-total-row promo-code">
+                                    <div class="order-total-slot">
+                                        <a href="#" style="font-weight: 600;">
+                                            -20% with 100 Units
+                                            <span class="units">
+                                                <span>
+                                                    <img src="../img/store-site/coin.svg"
+                                                        style="width: 22px; height: 22px; display: inline-block; margin-bottom: -5px;">
+                                                </span>
+                                                <span class="units-val">100</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="add-promocode-wrapper">
+                                    <button type="button">
+                                        <span style="font-size: 13px;">Add a promo code</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-total-section total-section">
+                                <div class="order-total-row final-total">
+                                    <div class="order-total-title">
+                                        <p class="order-total">Total</p>
+                                        <p>
+                                            Units earned :
+                                            <span class="units">
+                                                <span>
+                                                    <img src="../img/store-site/coin.svg" alt=""
+                                                        style="width: 18px; height: 18px; display: inline-block; margin-bottom: -3px;">
+                                                </span>
+                                                <span class="units-val">18</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="order-total-value ">
+                                        <span class="price-value">$ 17.5</span>
+                                        <p style="text-align: right;">incl. VAT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-total-section discount-section">
+                                <span class="money-save">You saved $ 52.49!</span>
+                            </div>
+                        </div>
+                        <div class="checkout-btn-section">
+                            <div class="button-wrapper btn-large">
+                                <button type="submit" class="button">
+                                    <span>Checkout</span>
+                                </button>
+                            </div>
+                            <div class="secure-info">
+                                <span class="svg-wrapper" style="width: 25px; height: 25px;">
+                                    <img src="../img/store-site/secure.svg" alt="">
+                                </span>
+                                <span style="font-weight: 600; display: inline-block;">100% secure payment</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -327,5 +488,34 @@
         </footer>
     </main>
 </body>
-
+<script>
+    var count = 1;
+    var sale = 17.50;
+    var price = 69.99;
+    var unit = 18;
+    var priceShow = document.querySelectorAll('.price-value');
+    function increase(){
+        count++;
+        var save = (price - sale) * count;
+        document.querySelector('.value').innerHTML = count;
+        priceShow[0].innerHTML = '$' + count*sale;
+        priceShow[2].innerHTML = '$' + count*sale;
+        document.querySelector('.money-save').innerHTML = 'You saved $ ' + save.toFixed(2) + '!';
+        document.querySelectorAll('.units-val')[2].innerHTML = count * unit ;
+    }
+    function decrease(){
+        if(count == 1){
+            return count = 1;
+        }
+        else{
+            count--; 
+            var save = (price - sale) * count;
+            document.querySelector('.value').innerHTML = count;
+            priceShow[0].innerHTML = '$' + count*sale;
+            priceShow[2].innerHTML = '$' + count*sale;
+            document.querySelector('.money-save').innerHTML = 'You saved $ ' + save.toFixed(2) + '!';
+        document.querySelectorAll('.units-val')[2].innerHTML = count * unit ;
+        }
+    }
+</script>
 </html>

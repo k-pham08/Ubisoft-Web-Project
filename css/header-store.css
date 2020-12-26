@@ -17,7 +17,7 @@ div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
 a {
     display: block;
     text-decoration: none;
-    color: #008aa4;
+    color: #35c1cf;
 }
 
 ul, ol {
@@ -35,6 +35,19 @@ p {
 
 a, p {
     font-size: .9375rem;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    line-height: 1;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:focus {
+    outline: none;
 }
 
 .header {
@@ -129,7 +142,7 @@ a, p {
     align-items: center;
 }
 .nav-img{
-    width: 80%;
+    width: 100%;
     height: 50%;
 }
 .header-nav .nav-list {
