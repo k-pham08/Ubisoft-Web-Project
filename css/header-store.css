@@ -157,18 +157,18 @@ button:focus {
     display: inline-table;
     padding: 22px 20px;
     border-top: 4px solid black;
-    border-bottom: 4px solid black;
+    border-bottom: 5px solid black;
     font-size: .9375rem;
     transition: border .3s ease-in-out;
 }
 
 .header-nav .nav-link:hover {
-    border-bottom-color: #008aa4;
+    border-bottom: #00a4c5 5px solid;
 }
 
 .header-nav .nav-text {
     font-weight: 600;
-    color: #008aa4;
+    color: #00a4c5;
 }
 
 .header-nav .nav-main {
@@ -202,7 +202,7 @@ input[type="text"] {
     border: none;
     border-radius: 0;
     box-shadow: none;
-    border-bottom: 1px solid #008aa4;
+    border-bottom: 1px solid #00a4c5;
     font-size: .8125rem;
     width: 232px;
     height: 30px
@@ -213,7 +213,7 @@ input[type="text"]:focus {
 }
 
 ::placeholder {
-    color: #008aa4;
+    color:#00a4c5;
 }
 
 input[type="text"]:focus::placeholder {

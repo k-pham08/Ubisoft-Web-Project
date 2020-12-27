@@ -243,12 +243,17 @@
     flex-basis: auto;
 }
 .cart-section-content .item-quantity .item-operator{
-    padding: 0 5px;
     background-color: rgb(185, 185, 185);
     width: 10px;
     cursor: pointer;
     margin: 10px;
     user-select: none;
+}
+.cart-section-content .item-quantity #minus{
+    padding: 0 7px;
+}
+.cart-section-content .item-quantity #plus{
+    padding: 0 5px;
 }
 .cart-section-content .item-quantity .item-operator:hover{
     background-color: rgb(214, 214, 214);
