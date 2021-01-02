@@ -29,5 +29,5 @@ function decrease(){
 function remove(){
     document.querySelector('.cart-wrapper').remove();
     document.querySelector('.cart-empty').style.display = 'block';
-    document.querySelector('.cart-quantity').innerHTML = count - 1;
+    document.querySelector('.cart-quantity').innerHTML = 0;
 };
