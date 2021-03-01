@@ -58,11 +58,11 @@
         <h2>Assassin's Creed Franchise</h2>
         <div>Play your way through history in the award-winning video game series. Assassin's Creed immerses you in the memories of your ancestors, fighting to protect free will at pivotal moments in human history.</div>
     </div>
-    <div class="valhalla" id="ass-valhalla" data-aos="fade-up" data-aos-duration="1000">
-        <div class="val-content">
+    <div class="valhalla" id="ass-valhalla">
+        <div class="val-content"  data-aos="fade-up" data-aos-duration="1000">
             <h2>Assassin's Creed Valhalla</h2>
             <p>In Assassin’s Creed Valhalla, you are Eivor, a fierce Viking warrior. Explore a dynamic open world set against the brutal backdrop of England’s Dark Ages. Raid your enemies and build your political power in your quest to earn your place in Valhalla.</p>
-            <div class="val-button">More Info</div>
+            <div class="val-button" onclick="aosEvent()">More Info</div>
         </div>
         <div class="val-img"><img src="../img/content/valhalla.png" alt=""></div>
     </div>
@@ -446,8 +446,6 @@
 <script src="../js/index.js"></script>
 <script src="../LibraryJS/aos.js"></script>
 <script>
-  AOS.init({
-      once: true,
-  });
+  AOS.init();
 </script>
 </html>

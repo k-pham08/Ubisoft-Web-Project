@@ -1,0 +1,116 @@
+@media only screen and (max-width: 768px){
+    .preloader{
+        visibility: hidden;
+    }
+    .ubisoft-menu{
+        width: 768px;
+    }
+    .main-menu{
+        display: none;
+        width: 50%;
+    }
+    .main-menu > ul > li{
+        margin: 0;
+    }
+    .lang-button{
+        display: none;
+    }
+    .search-area{
+        display: none;
+    }
+    .login-round{
+        opacity: 1;
+    }
+    .banner-logo{
+        display: none;
+    }
+    .w-100{
+        height: 71vh;
+    }
+    .news-list{
+        display: none;
+    }
+    .news-tittle{
+        margin-bottom: 4rem;
+    }
+    .news-article{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .news-article-left{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .news-article-right img{
+        width: 340px;
+    }
+    .store-content{
+        flex-wrap: wrap;
+    }
+    .store-content div{
+        width: 80%;
+    }
+    .store-content p{
+        font-size: 45px;
+    }
+    .store-content img{
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 2rem;
+    }
+    .content-container{
+        display: flex;
+        position: absolute;
+        left: 85px;
+    }
+    .ubisoft-community{
+        padding: 7rem;
+    }
+    .global-footer{
+        display: block;
+        height: 75vh;
+    }
+    .legaly{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .legaly img{
+        margin-top: 2rem;
+    }
+    .footer-table{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+    .footer-table td{
+        padding: 1rem;
+    }
+    .footer-table td:hover{
+        text-decoration: none;
+    }
+    .rate{
+        right: 0;
+    }
+    .valhalla-button:hover,
+    .odyssey-button:hover,
+    .origins-button:hover,
+    .syndicate-button:hover,
+    .unity-button:hover,
+    .iv-button:hover,
+    .iii-button:hover,
+    .revelations-button:hover,
+    .brotherhood-button:hover,
+    .rogue-button:hover{
+        transform: scale(1);
+    }
+    .all-games-slide button:hover{
+        color: white;
+        background-color: rgb(173, 0, 0);
+    }
+    .social-contact img{
+        opacity: 1;
+    }
+}
